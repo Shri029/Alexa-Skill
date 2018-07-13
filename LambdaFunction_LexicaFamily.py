@@ -99,8 +99,8 @@ def getNewWordResponse(intent,session):
                     " Which means, " + newWord[1] + \
                     " and it's synonyms are , "  + newWord[2]
                     
-    repromptText = "You can ask me a new tech word to add to your Vocabulary by saying, " \
-                    "Tell me a new Tech Term"
+    repromptText = "You can ask me a new word to add to your Vocabulary by saying, " \
+                    "Tell me a new word"
                         
     return build_response(sessionAttributes, build_speechlet_response(cardTitle, speechOutput, repromptText, shouldEndSession))
         
